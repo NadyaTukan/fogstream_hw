@@ -1,6 +1,6 @@
 const arr = ['1', '2', '3', '4'];
 let res1 = arr.find(item => item === '3');
-console.log(res1);
+console.log("Задание 1:", res1);
 
 
 const peopleList = [{
@@ -26,7 +26,7 @@ const peopleList = [{
 ];
 
 let res2 = peopleList.filter(item => item.id > 2);
-console.log(res2);
+console.log("Задание 2:", res2);
 
 
 const getData = async() => {
@@ -35,7 +35,7 @@ const getData = async() => {
         const res = await data.json();
         console.log(res);
         const entity = res.results.filter((item) => item.id > 5 && item.id < 20);
-        console.log('entity', entity);
+        console.log("Задание 3:", entity);
     } catch (error) {
         console.log(error);
     }
@@ -49,6 +49,7 @@ const obj = {
     age: 20,
     id: 1
 };
+alert("Задание 4");
 for (const key in obj) {
     alert(`${key}: ${obj[key]}`);
 }
